@@ -1,0 +1,140 @@
+html {
+  font-family: Helvetica; 
+  display: inline-block; 
+}
+
+h1 {
+  font-size: 2em;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 0.2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+br {
+   display: block;
+   margin: 3px;
+}
+body {
+  background-color: lightgray;
+}
+ 
+ 
+/*GRID*/
+.container {
+  display: grid;
+  grid-template-rows: 75px 1fr 75px;
+  grid-template-columns: auto 500px;
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.grid-item {
+  border: 1px solid gray;
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.nav {
+  grid-column: 1 / span 3;
+  text-align: right;
+}
+
+.img {
+  grid-column: 1;
+  grid-row: 2 / span 3;
+  border: none;
+  padding: 0;
+}
+
+.space {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
+.panel {
+  grid-column: 2 / span 2;
+  display: grid;
+}
+
+.inside {
+  grid-row: 1;
+  border: none;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+/*BUTTONS*/
+.button {
+  display: inline-block; 
+  border: none; 
+  border-radius: 4px; 
+  color: white; 
+  font-size: 20px; 	
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 1px; 
+  cursor: pointer; 
+  height: 50px; 
+  width: 120px;
+}
+
+.menu {
+  background-color: blue; 
+}
+
+.active {
+  background-color: orange;
+}
+
+.disabled {
+  background-color: gray;
+}
+
+.move {
+  background-color: blue;
+  border-radius: 10px;
+  font-size: 12px;
+  height: 30px; 
+  width: 30px;
+}
+
+@keyframes glowing {
+  0% { background-color: #ff2d00; box-shadow: 0 0 10px #ff2d00; }
+  50% { background-color: #af1f00; box-shadow: 0 0 30px #af1f00; }
+  100% { background-color: #b23e25; box-shadow: 0 0 10px #b23e25; }
+}
+
+.glowing {
+  animation: glowing 1800ms infinite;
+}
+
+
+.axis {
+  background-color: orange;
+  border-radius: 10px;
+  font-size: 12px;
+  height: 30px; 
+  width: 30px;
+  cursor: default;
+}
+
+.position {
+  background-color: white;
+  border-radius: 0px;
+  font-size: 16px;
+  color: black; 
+  height: 30px; 
+  width: 75px;
+  cursor: default;
+  text-align: right;
+}
